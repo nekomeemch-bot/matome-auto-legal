@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Privacy Policy — Matome Auto Uploader</title>
+  <style>
+    body { font-family: system-ui, sans-serif; max-width: 720px; margin: 40px auto; padding: 0 16px; line-height: 1.6; color: #222; }
+    a { color: #0b57d0; }
+    h2 { margin-top: 1.6em; }
+  </style>
+</head>
+<body>
+  <p><a href="index.html">← Home</a></p>
+  <h1>Privacy Policy — Matome Auto Uploader</h1>
+  <p><strong>Last updated:</strong> 2026-07-25<br />
+  <strong>Contact:</strong> <a href="mailto:machiappjp@gmail.com">machiappjp@gmail.com</a></p>
+
+  <p>This Privacy Policy describes how we handle information when authorized operators use Matome Auto Uploader (“the App”) to upload videos to YouTube channels that our organization owns or controls.</p>
+
+  <h2>1. Who this App is for</h2>
+  <p>The App is an <strong>internal tool</strong>. It is not offered as a public SaaS to unrelated third parties. Only authorized operators within our organization may use it.</p>
+
+  <h2>2. Information we access and store</h2>
+  <p>When an operator connects a YouTube channel via Google OAuth 2.0, the App may access and store:</p>
+  <ul>
+    <li>Google account identifiers needed for authentication</li>
+    <li>OAuth access and refresh tokens (stored as secrets on secured systems / CI)</li>
+    <li>Video metadata we create (title, description, tags, thumbnails we upload)</li>
+    <li>Video IDs returned by YouTube after upload</li>
+  </ul>
+  <p>We use the YouTube Data API scope limited to upload-related functionality (e.g. <code>youtube.upload</code>).</p>
+
+  <h2>3. How we use information</h2>
+  <p>We use this information only to authenticate to YouTube on behalf of channels we manage; upload videos, set thumbnails, and manage upload metadata; and operate/troubleshoot the App.</p>
+  <p>We do <strong>not</strong> sell personal data. We do <strong>not</strong> use the API to scrape YouTube at scale or to provide upload access to the general public.</p>
+
+  <h2>4. Sharing</h2>
+  <p>We do not share OAuth tokens or channel data with unaffiliated third parties, except Google/YouTube as required for API services, and infrastructure providers strictly necessary to run our systems (e.g. GitHub Actions) under confidentiality controls.</p>
+
+  <h2>5. Google / YouTube data</h2>
+  <p>Use of YouTube API Services is subject to the
+    <a href="https://www.youtube.com/t/terms">YouTube Terms of Service</a> and
+    <a href="https://policies.google.com/privacy">Google Privacy Policy</a>.</p>
+
+  <h2>6. Revoking access and deletion</h2>
+  <p>Channel owners / Google account holders can revoke the App’s access at any time:</p>
+  <p><a href="https://myaccount.google.com/permissions">https://myaccount.google.com/permissions</a></p>
+  <p>After revocation, operators should delete stored tokens from our secrets storage. To request deletion of residual operational logs, contact
+    <a href="mailto:machiappjp@gmail.com">machiappjp@gmail.com</a>. We will process requests within a reasonable period unless retention is required by law.</p>
+
+  <h2>7. Data retention</h2>
+  <p>OAuth tokens are retained only while a channel remains connected for uploading. Tokens are removed when access is revoked or a channel is decommissioned. Application logs may be retained for a limited period for security and debugging.</p>
+
+  <h2>8. Security</h2>
+  <p>Tokens and credentials are stored in restricted secret stores, not in public repositories. Access is limited to authorized operators.</p>
+
+  <h2>9. Children</h2>
+  <p>The App is not directed at children under 13 (or the equivalent age in your jurisdiction).</p>
+
+  <h2>10. Changes</h2>
+  <p>We may update this Policy. The “Last updated” date will change when we do. Continued use of the App after updates constitutes acceptance of the revised Policy.</p>
+
+  <h2>11. Contact</h2>
+  <p><a href="mailto:machiappjp@gmail.com">machiappjp@gmail.com</a></p>
+</body>
+</html>
